@@ -12,3 +12,42 @@ private Poem getPoem () {
         poem.setTranslation("");
         return poem;
     }
+
+
+private Long id;
+    private String dynasty;
+    private String category;
+    private String title;
+    private String author;
+    private String content;
+    private String href;
+    private String translation;
+
+    public class PoemContent {
+
+    private Long id;
+
+    private String sentence;
+
+    private int order;
+
+    private Long poemId;
+    }
+
+
+HanZi
+     @TableField("NAME")
+    private String name;
+    @TableField("EXPLANATORY_NOTE")
+    private String explanatoryNote;
+
+
+    PersonHanZiLink
+
+    @TableField("PERSON_ID")
+    private Long personId;
+    @TableField("HAN_ZI_ID")
+    private Long hanZiId;
+
+
+    
